@@ -11,6 +11,7 @@ class PostsController < ApplicationController
       format.html { render :show }
       format.json { render json: @post.to_json(only: [:title, :description, :id],
                               include: [author: { only: [:name]}]) }
+    end
   end
 
   def new
