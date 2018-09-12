@@ -16,6 +16,7 @@ class PostsController < ApplicationController
 
   def new
     @post = Post.new
+    @button = "Submit Post"
   end
 
   def create
